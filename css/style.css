@@ -1,0 +1,1556 @@
+/* Font-face */
+
+
+@font-face{
+	font-family: "Stroke";
+	src: url("../fonts/Distant_Stroke.otf");
+}
+
+@font-face{
+	font-family: "Caviar";
+	src: url("../fonts/CaviarDreams.ttf");
+}
+
+@font-face{
+	font-family: "Coolvetica";
+	src: url("../fonts/coolvetica rg.ttf");
+}
+
+.bloc_eleven{
+	margin-bottom: 5%;
+}
+
+.bloc_title_one{
+	margin-top: 5%;
+}
+
+#stripe-button{
+	 margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+.btn-danger{
+	transition: 0.4s;
+	border: 1px #d9534f solid
+}
+
+.btn-danger:hover{
+	transition: 0.4s;
+	cursor: pointer;
+	background-color: #fff;
+	border: 1px #ff0000 solid;
+	color: #ff0000;
+	border-radius: 0px;
+}
+
+.button_switcher{
+	display: none
+}
+
+/**/
+#faq, #conditions_generales, #mentions_legales{margin-bottom: 5%;}
+/**/
+
+/*Devenir Edgar*/
+
+
+ #devenir_edgar h1{
+ 	color: #ff0000;
+ 	margin-top: 20%;
+ 	text-align: center;
+ 	font-size: 4vw;
+}
+
+#devenir_edgar h2{
+ 	color: #000;
+ 	margin-top: 0%;
+ 	margin-bottom: 10%;
+ 	text-align: center;
+ 	font-size: 2vw;
+}
+
+#devenir_edgar h3{
+ 	color: #000;
+ 	font-size: 1vw;
+    padding: 2%;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px #ff0000 solid;
+    transition: 0.4s;
+}
+
+#devenir_edgar form{
+	margin-top: 5%;
+	margin-bottom: 5%;
+	padding: 2%;
+	border: 1px #A5A5A5 solid;
+}
+
+#devenir_edgar input, #devenir_edgar select{
+	padding: 1%;
+	margin: 1% 0% 1% 0%;
+}
+
+
+/**/
+
+/*Mentions légales*/
+
+
+ #mentions_legales h1{
+ 	color: #ff0000;
+ 	margin-top: 20%;
+ 	text-align: center;
+ 	font-size: 4vw;
+}
+
+#mentions_legales h2{
+ 	color: #000;
+ 	margin-top: 0%;
+ 	margin-bottom: 10%;
+ 	text-align: center;
+ 	font-size: 2vw;
+}
+
+#mentions_legales h3{
+ 	color: #000;
+ 	font-size: 1vw;
+    padding: 2%;
+    margin-top: 6%;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px #ff0000 solid;
+    transition: 0.4s;
+}
+
+/**/
+
+/*FAQ*/
+
+
+ #faq h1{
+ 	color: #ff0000;
+ 	margin-top: 20%;
+ 	text-align: center;
+ 	font-size: 4vw;
+}
+
+#faq h2{
+ 	color: #000;
+ 	margin-top: 0%;
+ 	margin-bottom: 10%;
+ 	text-align: center;
+ 	font-size: 2vw;
+}
+
+#faq h3{
+ 	color: #000;
+ 	font-size: 1vw;
+    padding: 2%;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px #ff0000 solid;
+    transition: 0.4s;
+}
+
+#faq h3:hover{
+	border: 1px #000 solid;
+	transition: 0.4s;
+	cursor: pointer;
+	text-shadow: 0 0 1px #000;
+}
+
+#faq h3:first-child{
+ 	margin-top: 5%;
+}
+
+#faq .bloc{
+ 	display: none;
+}
+
+#faq p:last-child{
+ 	margin-bottom: 5%;
+}
+
+
+
+/*Conditions générales*/
+
+
+ #conditions_generales h1{
+ 	color: #ff0000;
+ 	margin-top: 20%;
+ 	text-align: center;
+ 	font-size: 4vw;
+}
+
+#conditions_generales h2{
+ 	color: #000;
+ 	margin-top: 0%;
+ 	margin-bottom: 10%;
+ 	text-align: center;
+ 	font-size: 2vw;
+}
+
+#conditions_generales h3{
+ 	color: #000;
+ 	font-size: 1vw;
+    padding: 2%;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px #ff0000 solid;
+    transition: 0.4s;
+}
+
+#conditions_generales h3:hover{
+	border: 1px #000 solid;
+	transition: 0.4s;
+	cursor: pointer;
+	text-shadow: 0 0 1px #000;
+}
+
+#conditions_generales h3:first-child{
+ 	margin-top: 5%;
+}
+
+#conditions_generales .bloc{
+ 	display: none;
+}
+
+#conditions_generales h4{
+ 	color: #000;
+ 	margin-top: 5%;
+ 	font-size: 1vw;
+}
+
+#conditions_generales p:last-child{
+ 	margin-bottom: 5%;
+}
+
+/**/
+
+
+/*Scrollbar*/
+
+.switcher_header{
+	margin-top: 29%;
+}
+
+.switcher_header a p{
+	color: #ff0000;
+	font-size: 1vw;
+	transition: 0.2s;
+	text-decoration: none
+}
+
+.switcher_header a p:hover{
+	color: #ff0000;
+	font-size: 1vw;
+	
+	transition: 0.2s;
+	text-shadow : 0 0 1px #ff0000;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.switcher_header .fa.fa-angle-down{
+    color: #ff0000;
+    width: 46px;
+    padding: 0%;
+    transition: 0.2s;
+    border: 1px #ff0000 solid;
+    border-radius: 82%;
+}
+
+.switcher_header .fa.fa-angle-down:hover{
+    color: #FFFFFF;
+    padding: 0%;
+    background-color: #ff0000;
+    transition: 0.2s;
+    border: 1px #fff solid;
+    border-radius: 82%;
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #fff;
+    background-color: #fff; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    -webkit-box-shadow: inset 0 0 6px #000; 
+    background-color: #000;
+}
+
+
+body{
+	font-family: "Caviar";
+	transition: 0.4s;
+}
+
+.fade_in_homepage{
+	margin-top: 10%;
+	transition: 0.2s;
+}
+
+.Background{
+	background-color: #E6E5E0;
+	transition: 0.4s;
+}
+
+#gotoTop {
+	display: none;
+    z-index: 299;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    background-color: rgba(0,0,0,.3);
+    font-size: 20px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFF;
+    top: auto;
+    left: auto;
+    right: 30px;
+    bottom: 50px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.opacity{
+	opacity: 1;
+}
+
+.menu-navbar-div{
+	color: black;
+	font-family: none;
+}
+
+nav .fa{
+	color: black;
+}
+
+.navbar-default .navbar-brand{
+	font-size: 2vw;
+	font-family: "Caviar";
+	color: #000;
+}
+
+.navbar-default .navbar-brand span{
+	display: none;
+}
+
+.navbar-default{
+	padding: 1.5%;
+	transition: 0.4s;
+}
+
+.navbar_box{
+	box-shadow: 0 0 20px 5px #000;
+	transition: 0.4s;
+	padding: 0.5%;
+}
+
+.navbar-default .navbar-nav>li>a{
+	color: #000;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 1vw;
+    font-family: "Coolvetica";
+}
+
+.navbar-default .navbar-nav>li>a:hover{
+	transition: 0.2s;
+	color: #ff0000;
+}
+
+nav{
+		-webkit-transition: height .4s ease,opacity .3s ease;
+-o-transition: height .4s ease,opacity .3s ease;
+transition: height .4s ease,opacity .3s ease;
+}
+
+.hasScrolled{
+	padding: 20%;
+	background-color: #E6E5E0;
+	color: #000;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.15);
+}
+
+.main{
+	padding: 22%;
+	background-color: #E6E5E0;
+	color: #000;
+	text-shadow: 1px 1px 1px rgba(0,0,0,.15);
+}
+
+.main h1, .hasScrolled h1{
+	font-size: 3.3vw;
+	margin-bottom: 3%;
+}
+
+.main h2, .hasScrolled h2{
+	font-size: 2.3vw;
+}
+
+.clearfix_pricing{
+    background-color: #E6E5E0;
+    padding: 3% 0% 0% 0%;
+}
+
+.section_edgar_carte{
+	padding: 2%;
+
+}
+
+.section_edgar_carte p{
+	font-size: 0.9vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.section_edgar_carte h3, .section_edgar_services h3{
+	font-size: 3vw;
+	text-align: center;
+	color: #444444;
+}
+
+.section_edgar_carte{
+	text-align: center;
+}
+
+.homepage_presentation{
+	background: url("images/test.jpg");
+}
+
+.section_edgar_services{
+	padding: 2% 15% 2% 15%;
+	margin-top: 2%;
+	background-color: #D6D6D6;
+}
+
+.section_edgar_services h5{
+	margin-top: 5%;
+}
+
+.section_edgar_services h3{
+	margin-top: 5%;
+	margin-bottom: 0%;
+	text-align: center;
+	color: #fff;
+}
+
+.section_edgar_services h4{
+	margin: 0%;
+	text-align: center;
+	color: #fff;
+}
+
+.section_edgar_services div{
+	text-align: center;
+	margin-top: 5%;
+}
+
+.section_edgar_services img{
+	width: 7vw;
+}
+
+.section_edgar_services p{
+	font-size: 1.5vw;
+	color: #fff;
+	margin: 2% 0% 5% 0%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family:"Caviar";
+	font-weight: 700;
+}
+
+.content_presentation{
+	padding: 6% 25% 6% 25%;
+	background: url("../images/background.jpg") center no-repeat;
+}
+
+.content_presentation h2{
+	font-family: "Stroke";
+	font-size: 5vw;
+	margin-top: 0%;
+	margin-bottom: 5%;
+	color: #444444;
+}
+
+.slider-caption h3{
+	color: black;
+	font-size: 2vw;
+}
+
+.content_presentation .box{
+	padding: 5%;
+	background-color: #fff;
+	text-align:center;
+	font-size: 1vw;
+}
+
+.content_presentation .box p{
+	margin: 7% 0% 7% 0%;
+	font-size: 1vw;
+}
+
+#footer{
+	padding: 5% 0% 5% 0%;
+	border: 0px;
+	font-size: 1vw;
+	background-color: #eee
+}
+
+#footer ul li{
+	list-style-type: none;
+	font-weight: 700;
+	margin-top: 2%;
+}
+
+#footer .list_footer{
+	float: left;
+	padding: 0% 3% 0% 0%;
+	border-right: 1px #858583 solid;
+}
+
+#footer .socials{
+	padding: 0% 0% 0% 3%;
+	float: left;
+	width: 30vw;
+}
+
+#footer .socials h3{
+	margin-top: 0%;
+}
+
+#footer .fa-facebook-square{
+	margin-right: 3%;
+}
+
+#footer a{
+	color: #858583;
+	font-weight: 700;
+}
+
+#footer a:hover{
+	color: #ff0000;
+	transition: 0.2s;
+	text-decoration: none
+}
+
+#footer .list_first{
+	margin-left: 32vw;
+	float: left;
+	padding: 0% 2% 0% 0%;
+}
+
+.swiper-slide{
+	background-color: #E6E5E0;
+	width: 100%;
+}
+
+nav .menu-navbar-div:hover{
+	color: #ff0000;
+	transition: 0.2s;
+}
+
+#gotoTop:hover{
+	color: #fff;
+	transition: 0.2s;
+	background-color: #ff0000;
+}
+
+
+#header .Test{
+	background-color: #ff0000;
+}
+
+/*Pricing*/
+
+.pricing-box{
+    position: relative;
+    border: 1px solid rgba(0,0,0,.075);
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #F5F5F5;
+    color: #494949;
+}
+
+.badge_reduction{
+    width: 7vw;
+    position: absolute;
+    z-index: 1;
+    margin-left: 15vw;
+}
+
+.pricing-title {
+    padding: 15px 0;
+    background-color: #F9F9F9;
+    border-radius: 3px 3px 0 0;
+    text-shadow: 1px 1px 1px #FFF;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+}
+
+.pricing-title h3 {
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #555;
+}
+
+.price-unit.sur-demande{
+	font-size: 2vw;
+}
+
+.card_description{
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+.pricing-price {
+    position: relative;
+    padding: 25px 0;
+    color: #333;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 1;
+}
+
+.pricing-price span {
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px 3px 0 0;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.pricing-price p{
+	font-size: 0.9vw;
+	margin-top: 5%;
+}
+
+.pricing-price span.price-tenure {
+    vertical-align: baseline;
+    font-size: 16px;
+    font-weight: 400;
+    color: #999;
+    margin: 0 0 0 3px;
+}
+
+.pricing-features {
+    border-bottom: 1px solid rgba(0,0,0,.075);
+}
+
+.pricing [class^=col-] {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pricing-features ul {
+    margin: 0;
+    padding: 15px 0;
+    list-style: none;
+}
+
+.pricing-features ul input{
+	padding: 2%;
+	margin: 1%;
+	font-size: 1vw;
+}
+
+#pricing .questions{
+	padding: 2%;
+	font-size: 1vw;
+	text-align: center;
+}
+
+#pricing .questions a{
+	color: #ff0000;
+}
+
+#pricing .questions a:hover{
+	color: #ff0000;
+	text-decoration: underline;
+	transition: 0.2s;
+}
+
+.pricing h5 {
+    padding: 0% 5% 5% 5%;
+    font-size: 0.9vw;
+}
+
+.pricing-features li {
+    padding: 6px 0;
+    font-size: 0.9vw;
+    word-break: break-all;
+}
+
+.pricing-action {
+    padding: 15px 30px;
+    display: none
+}
+
+
+/*Conditions avant le paiement */
+
+#explication_paiement .description{
+	font-size: 1vw;
+	margin-top: 5%;
+	text-align: left
+}
+
+#explication_paiement .hide_section{
+	display: none
+}
+
+#explication_paiement .savoir_plus{
+	color: #ff0000;
+	transition: 0.2s;
+}
+
+#explication_paiement .savoir_plus{
+	transition: 0.2s;
+	text-shadow: 0 0 1px #ff0000;
+	cursor: pointer;
+}
+
+#explication_paiement #bloc_1{
+	float: left;
+}
+
+#explication_paiement #bloc_2{
+	float: right;
+}
+
+#explication_paiement{
+	display: none;
+}
+
+#explication_paiement .description_title{
+	font-size: 1.2vw;
+    margin-top: 0%;
+}
+
+#explication_paiement .description_question{
+	font-size: 1vw;
+    margin-top: 5%;
+}
+
+#explication_paiement .description_mention{
+	font-size: 1vw;
+    margin-top: 5%;
+    font-weight: 600;
+}
+
+/**/
+
+/*Conditions pour requete*/
+
+/*Conditions avant le paiement */
+
+#explication_paiement_requete .description{
+	font-size: 1vw;
+	margin-top: 5%;
+	text-align: left
+}
+
+#explication_paiement_requete .hide_section{
+	display: none
+}
+
+#explication_paiement_requete .savoir_plus{
+	color: #ff0000;
+	transition: 0.2s;
+}
+
+#explication_paiement_requete .savoir_plus{
+	transition: 0.2s;
+	text-shadow: 0 0 1px #ff0000;
+	cursor: pointer;
+}
+
+#explication_paiement_requete #bloc_1{
+	float: left;
+}
+
+#explication_paiement_requete #bloc_2{
+	float: right;
+}
+
+#explication_paiement_requete .description_title{
+	font-size: 1.2vw;
+    margin-top: 0%;
+}
+
+#explication_paiement_requete .description_question{
+	font-size: 1vw;
+    margin-top: 5%;
+}
+
+#explication_paiement_requete .description_mention{
+	font-size: 1vw;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: 600;
+}
+
+#inscription h1, #inscription p{
+	text-align: center;
+	margin: 0%;
+}
+
+#inscription h1{
+	color: #ff0000;
+	margin-top: 5%;
+}
+
+.home{
+	display: none;
+	text-align: center;
+	margin-top: 10%;
+}
+
+.btn-accept{
+	border: 2px #28c223 solid;
+	background-color: rgba(0,0,0,0);
+	color: #28c223;
+}
+
+.btn-accept:hover{
+	border: 2px #28c223 solid;
+	background-color: #28cc23;
+	color: #fff;
+}
+
+.btn-refuse{
+	border: 2px #ff0000 solid;
+	background-color: rgba(0,0,0,0);
+	color: #ff0000;
+}
+
+.btn-refuse:hover{
+	border: 2px #ff0000 solid;
+	background-color: #ff0000;
+	color: #fff;
+}
+
+.btn-refuse-select{
+	display: none;
+	border: 2px #ff0000 solid;
+	background-color: rgba(0,0,0,0);
+	color: #ff0000;
+}
+
+.btn-refuse-select-request{
+	display: none;
+}
+
+.btn-refuse-select:hover{
+	border: 2px #ff0000 solid;
+	background-color: #ff0000;
+	color: #fff;
+}
+
+
+.home h4{
+	font-size: 3vw;
+	color: #fff;
+}
+
+.home button{
+	font-size: 1vw;
+	width: 10vw;
+}
+
+.fa-home{
+	margin-top: 1%;
+	margin-left: 1%;
+	color: black;
+}
+
+#home_switch img{
+	width: 2vw;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.main .col-md-5 p{
+	margin-top: 200%;
+}
+
+a .fa-close:hover, a .fa-home:hover{
+	color: #ff0000;
+	transition: 0.2s;
+}
+
+#inscription .sign_up .input{
+	opacity: 0.8;
+	padding: 1%;
+	margin-top: 5%;
+	border-bottom: 1px #CDCDCD solid;
+	border-top: 0px;
+	border-right: 0px;
+	border-left: 0px;
+	transition: 0.4s;
+	font-size: 1vw;
+}
+
+.requete{
+	display: none;
+    font-size: 1vw;
+    padding: 2%;
+    margin: 0%;
+    border: 1px #CDCDCD solid;
+	transition: 0.4s;
+}
+
+.requete_selection{
+	display: none;
+    font-size: 1vw;
+    padding: 2%;
+    margin-top: 5%;
+    border: 1px #CDCDCD solid;
+	transition: 0.4s;
+}
+
+.btn-final{
+	display: none;
+}
+
+.ListeElement{
+	display:none;
+	padding: 2%;
+}
+
+.btn-submit{
+	margin-top: 5%;
+	border: 2px #ff0000 solid;
+	color: #ff0000;
+	padding: 1%;
+	font-size: 1vw;
+	background-color: #fff;
+	font-weight: 700;
+	font-family: "Caviar";
+}
+
+.btn-submit:hover{
+	transition: 0.4s;
+	background-color: #ff0000;
+	color: #fff;
+}
+
+.btn-accueil{
+	margin-top: 1%;
+	margin-left: 1%;
+	border: 2px #ff0000 solid;
+	color: #ff0000;
+	padding: 0.3%;
+	background-color: #fff;
+	font-weight: 700;
+	font-family: "Caviar";
+}
+
+.btn-accueil:hover{
+	transition: 0.4s;
+	background-color: #ff0000;
+	color: #fff;
+}
+
+#content_heading img{
+	width: 100%;
+	z-index: -1;
+}
+
+#content_heading{
+	
+}
+
+#content_heading h1{
+	color: #333333;
+	margin-bottom: 10%;
+	margin-top: 10%;
+	padding-bottom: 10%;
+	border-bottom: 1px #333333 solid;
+}
+
+#content_heading h1:before{
+	border-bottom: 1px #333333 solid;
+}
+
+#content_heading .lead{
+    margin-bottom: 10%;
+    margin-top: 15%;
+    line-height: 1.7;
+}
+
+
+
+/* Post inscription */
+
+#validation_inscription{
+	padding: 2%;
+	margin-top: 15%;
+}
+
+#validation_inscription h1{
+	color: #ff0000;
+	text-align: center;
+	margin-bottom: 6%;
+}
+
+#validation_inscription span{
+	color: #ff0000;
+	font-weight: 700
+}
+
+#validation_inscription p{
+	margin-top: 3%;
+	font-size: 0.9vw;
+}
+
+#inscription_form .badge_reduction{
+	display: none
+}
+
+#inscription_form p{
+	font-size: 1vw;
+	text-align: center
+}
+
+
+/*Post paiement*/
+
+
+#validation_paiement{
+	padding: 2%;
+}
+
+#validation_paiement h1{
+	font-size: 3vw;
+	text-align: center;
+	color: #ff0000;
+	margin: 0%;
+	font-family: "Caviar";	
+}
+
+.pay_card{
+	margin-top: 5%;
+}
+
+#validation_paiement h2{
+	font-size: 2vw;
+	margin: 0%;
+	text-align: center;
+	color: #ff0000;
+	font-family: "Caviar";	
+}
+
+#validation_paiement p{
+	margin-top: 17%;
+    text-align: center;
+}
+
+
+
+
+/* Section Admin */
+
+.box_admin{
+	display: none;
+	border: 1px #000 solid;
+	box-shadow : 0 0 10px 1px #000;
+	padding: 2%;
+	min-height: 16vw;
+}
+
+.box_admin li{
+	list-style-type: none;
+	color: #000;
+}
+
+#section_admin{
+	padding: 2%;
+}
+
+#section_admin h1{
+	color: #ff0000;
+	margin: 0%;
+	text-align: center;
+	font-size:3vw;
+}
+
+#section_admin h1 span{
+	color: #000;
+	margin: 0%;
+	text-align: center;
+	font-size:3vw;
+}
+
+#section_admin .loading{
+	display: block;
+	margin: 10% auto 0% auto;
+	width: 20vw;
+}
+
+#section_admin h2{
+	color: #000;
+	margin: 0% 0% 5% 0%;
+	text-align: center;
+}
+
+#section_admin span{
+	color: #ff0000;
+	font-weight: 700
+}
+
+#section_admin p{
+	font-size: 0.9vw;
+}
+
+.admin_access input, .admin_access button{
+	padding: 2%;
+	font-size: 1vw;
+}
+.admin_access{margin-top: 2%;}
+.admin_access img{
+	margin-bottom: 5%;
+	width: 20vw;
+}
+.wrong_password{
+	width: 20vw;
+}
+
+
+/* Section paiement */
+
+#section_paiement .sign_up{
+	margin-top: 4%;
+}
+
+#section_paiement h1{
+	text-align: center;
+	color: #ff0000;
+	font-size: 3vw;
+	margin: 5% 0% 0% 0%;
+}
+
+#section_paiement h2{
+	text-align: center;
+	color: #000;
+	margin: 0%;
+	font-size: 1.5vw;
+}
+
+#section_paiement .p_switcher{
+	text-align: center;
+	color: #000;
+	margin: 5% 0% 5% 0%;
+	font-size: 1vw;
+}
+
+
+#section_paiement textarea{
+	    padding: 1%;
+    font-size: 1vw;
+    height: 5vw;
+    max-height: 7vw;
+    max-width: 608px;
+}
+
+.mobile_link{
+	display: none;
+}
+
+/* Fin format PC */
+
+
+/* Format téléphone */
+
+@media screen and (max-width: 768px){
+	.badge_reduction{
+		width: 22vw;
+		margin-left: 0%;
+	}
+	#gotoTop{
+		display: none;
+	}
+	.navbar-default .navbar-brand{
+	font-size: 7vw;
+	}
+	.navbar-default .navbar-nav>li>a{
+	font-size: 4vw;
+	}
+	.main{
+		padding: 35% 0% 10% 0%;
+	}
+	.main h1{
+		font-size: 6vw;
+		margin-bottom: 0%;
+	}
+	.main h2{
+		font-size: 3vw;
+		margin-top: 2%;
+	}
+	.main h3{
+		margin-top: 3%;
+		font-size: 3vw;
+	}
+	.fade_in_homepage{
+		margin-top: 0%;
+		margin-bottom: 10%;
+	}
+	.content_heading .lead{
+    	margin-top: 0%;
+    	font-size: 4.5vw;
+	}
+	.btn-submit{
+		    padding: 2%;
+    font-size: 5vw;
+	}
+	.box h2{
+		font-size: 10vw;
+	}
+	.home button {
+    font-size: 4vw;
+    width: 28vw;
+	}
+	.home h4{
+		font-size: 8vw;
+		margin-bottom: 0%;
+		margin-top: 0%;
+	}
+	.box p{
+		font-size: 2.5vw;
+	}
+	.content_heading h1{
+		font-size: 4vw;
+	}
+	.switcher_header .fa.fa-angle-down{
+		display: none;
+	}
+	.switcher_header a p{
+		display: none;
+	}
+	.switcher_header{
+		margin-top: 10%;
+	}
+	.content_presentation{
+	padding: 6% 10% 6% 10%;
+	}
+	.content_presentation h2{
+	font-size: 10vw;
+	}
+	.content_presentation .box p{
+	font-size: 2.5vw;
+	}
+	#content_heading h1{
+	margin-bottom: 5%;
+	margin-top: 5%;
+	font-size: 5vw;
+	}
+	#content_heading .lead{
+	margin-bottom: 0%;
+	margin-top: 0%;
+	}
+	.pricing h5{
+	font-size: 4vw;
+	}
+	.pricing-price{
+		font-size: 12vw;
+	}
+	.pricing-price p{
+		font-size: 3.9vw;
+	}
+	.pricing-price span{
+		font-size: 6vw;
+		margin: 17px 3px 0 0;
+	}
+	#pricing .questions{
+		font-size: 4vw;
+		padding: 10%;
+	}
+	.pricing-title h3{
+		font-size: 5vw;
+	}
+	.pricing-features li{
+		font-size: 4vw;
+	}
+	.btn-lg{
+		font-size: 4vw;
+	}
+	#inscription_form p{
+		font-size: 4vw;
+	}
+	.section_edgar_services img{
+		width: 8vw;
+	}
+	.section_edgar_carte h3, .section_edgar_services h3{
+		font-size: 7vw;
+	}
+	.section_edgar_services h4{
+		font-size: 3vw;
+		margin-bottom: 5%;
+	}
+	.section_edgar_carte p{
+		font-size: 4vw;
+	}
+	.section_edgar_services h5{
+		font-size: 2.5vw;
+	}
+	.section_edgar_services{
+		padding: 2% 10% 2% 10%;
+	}
+	.section_edgar_services p{
+		font-size: 3vw;
+	}
+	.card_description{
+		font-size: 4vw;
+	}
+	#footer{
+		/*display: none*/
+	}
+	#footer .socials{
+		float: left;
+	}
+	#footer .list_first{
+	    margin-left: 5vw;
+	}
+	#footer .list_footer{
+    	font-size: 4vw;
+    	margin-left: 6%;
+	}
+	#footer .list_footer ul, #footer .list_first ul{
+		padding: 0%;
+	}
+	#footer .list_footer ul a li{
+		font-size: 3vw;
+	}
+	#footer .list_first ul a li{
+		font-size: 3vw;
+	}
+	#footer .socials h3{
+		font-size: 4vw;
+		margin-top: 0%;
+	}#footer .fa-3x{
+		font-size: 6vw;
+	}
+	#home_switch img{
+		width: 8vw;
+	    margin-left: 1%;
+	    margin-top: 1%;
+	}
+	#inscription h1 {
+    margin-top: 15%;
+    font-size: 7vw;
+	}
+	#inscription form p{
+		font-size: 3vw;
+		margin-bottom: 10%;
+	}
+	#inscription .sign_up .input{
+		font-size: 5vw;
+	}
+	#section_paiement h1{
+		font-size: 8vw;
+	}
+	#section_paiement h2{
+		font-size: 3.5vw;
+		margin-bottom: 10%
+	}
+	#devenir_edgar h1{
+		font-size: 10vw;
+		margin-top: 40%;
+	}
+	#devenir_edgar h2{
+		font-size: 4vw;
+	}
+	#conditions_generales h1, #faq h1{
+		font-size: 10vw;
+		margin-top: 40%;
+	}
+	#conditions_generales h2, #faq h2{
+		font-size: 4vw;
+	}
+	#conditions_generales h3, #faq h3{
+		margin: 2%;
+		padding: 3%;
+		font-size: 3.5vw;
+	}
+	#explication_paiement, #explication_paiement_requete{
+		margin-top: 10%;
+	}
+	#explication_paiement .description_title, #explication_paiement_requete .description_title{
+    font-size: 4vw;
+    margin-top: 0%;
+	}
+	#section_paiement h1{
+		font-size: 7vw;
+	}
+	.stripe-button-el span{
+		    font-size: 3vw;
+	}
+	#explication_paiement .description_question, #explication_paiement_requete .description_question {
+    font-size: 3.3vw;
+    margin-top: 13%;
+	}
+	#explication_paiement .description, #explication_paiement_requete .description{
+		font-size: 3vw;
+	}
+	#explication_paiement .description_mention, #explication_paiement_requete .description_mention{
+		font-size: 2vw;
+	}
+	#validation_inscription h1{
+		font-size: 8vw;
+		margin-bottom: 15%;
+	}
+	#validation_inscription p{
+		font-size: 4vw;
+		margin-top: 5%;
+	}
+	.btn-accueil{
+		padding: 2%;
+	}
+	#section_paiement .p_switcher{
+		font-size: 4vw;
+	}
+	#section_paiement textarea {
+    padding: 2%;
+    font-size: 4vw;
+    max-width: 100%;
+    height: 20vw;
+    max-height: 20vw;
+	}
+	.pricing-features ul input{
+		font-size: 5vw;
+	}
+}
+
+
+/* Format tablette */
+
+@media screen and (min-width: 768px) and (max-width: 1280px){
+	#content_heading h1{
+	font-size: 4vw;
+	padding-bottom: 10%;
+	margin-top: 10%;
+	}
+	#content_heading .lead {
+    margin-bottom: 4%;
+	}
+	.section_edgar_carte p{
+		font-size: 1.3vw;
+	}
+	.badge_reduction{
+    width: 7vw;
+    position: absolute;
+    z-index: 1;
+    margin-left: 3vw;
+	}
+	.pricing-action-default a{
+		font-size: 2vw;
+	}
+	.pricing-price p{
+	font-size: 0.9vw;
+	margin-top: 5%;
+	}
+	.pricing-price {
+    font-size: 5vw;
+	}
+	.pricing-title h3{
+	font-size: 2vw;
+	}
+	.pricing-price span {
+    font-size: 3vw;
+    margin: 0%;
+	}
+	#pricing .questions{
+		font-isze: 1.5vw;
+	}
+	#content_heading .lead{
+		margin-bottom: 10%;
+		margin-top: 10%;
+	}
+	.fade_in_homepage{
+		margin-top: 0%;
+	}
+	.pricing-features li{
+		font-size: 1.3vw;
+	}
+	.pricing h5{
+		font-size: 1.3vw;
+	}
+	.content_presentation .box p{
+		font-size: 1.5vw;
+	}
+	.content_presentation h2{
+		font-size: 7vw;
+	}
+	.main{
+		padding: 22%;
+	}
+	.main h1{
+		font-size: 4.3vw;
+	}
+	.main h2{
+		font-size: 2.5vw;
+		margin: 1%;
+	}
+	.switcher_header{
+		margin-top: 23%;
+	}
+	.navbar-default .navbar-nav>li>a{
+		font-size: 1.5vw;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.navbar-default .navbar-brand{
+		font-size: 3.5vw;
+	}
+	.switcher_header .fa.fa-angle-down {
+    width: 6vw;
+    font-size: 6vw;
+	}
+	.section_edgar_carte h3{
+	font-size: 4vw;
+	}
+	.section_edgar_carte p {
+    font-size: 1.5vw;
+	}
+	#footer{
+		/*display: none*/
+	}
+	#footer .socials{
+		float: left;
+	}
+	#footer .list_first{
+	    margin-left: 5vw;
+	}
+	#footer .list_footer{
+    	font-size: 4vw;
+    	margin-left: 6%;
+	}
+	#footer .list_footer ul, #footer .list_first ul{
+		padding: 0%;
+	}
+	#footer .list_footer ul a li, #footer .list_first ul a li{
+		font-size: 2vw;
+	}
+	#footer .socials h3{
+		font-size: 3vw;
+		margin-top: 0%;
+	}#footer .fa-3x{
+		font-size: 4vw;
+	}
+}
