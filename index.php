@@ -220,7 +220,7 @@ elseif (isset($_GET) && isset($_GET['conditions_generales'])) {
 
 elseif (isset($_GET['token_access']) && isset($_GET['identifiant']) && !empty($_GET['token_access']) && !empty($_GET['identifiant'])) {
 
-      if (($_GET['token_access']) ==  "8cs7tae2amt14c9m6oavlnu035" && ($_GET['identifiant']) == "Guillaume" || ($_GET['token_access']) ==  "8cs7tae2amt14c9m6oavlnu035" && ($_GET['identifiant']) == "Jean-carles") {
+      if (($_GET['token_access']) ==  "NULL" && ($_GET['identifiant']) == "NULL" || ($_GET['token_access']) ==  "NULL" && ($_GET['identifiant']) == "NULL") {
 
       $user = $_GET['identifiant'] ; 
       $title = "Bonjour $user"; 
