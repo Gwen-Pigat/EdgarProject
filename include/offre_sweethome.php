@@ -22,7 +22,7 @@
                 <li>Et bien d'autres !</li>
             </ul>   
         </div>
-        <input type="hidden" value="home" name="offre">
+        <input type="hidden" value="sweet_home" name="offre">
         <div class="btn-lg btn-danger btn_switcher_sweethome">Commencer</div>     
     </div>
 </div>

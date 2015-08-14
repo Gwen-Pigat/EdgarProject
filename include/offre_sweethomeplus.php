@@ -15,7 +15,7 @@
                 <li>Linge retourné la même semaine</li>
             </ul>
         </div>
-        <input type="hidden" value="home" name="offre">
+        <input type="hidden" value="sweet_home_plus" name="offre">
         <div class="btn-lg btn-danger btn_switcher_sweethomeplus">Commencer</div>     
     </div>
 </div>
