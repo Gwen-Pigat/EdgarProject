@@ -18,7 +18,7 @@ elseif (isset($_GET['inscription'])) {
 elseif (isset($_POST) && isset($nom) && isset($prenom) && isset($email) && isset($telephone) && isset($city) && isset($zip_code) && isset($adresse) && !empty($nom) && !empty($prenom) && !empty($email) && !empty($telephone) && !empty($city) && !empty($zip_code) && !empty($adresse)) {
 
 	$random = str_shuffle("azertyuiop0123456789");
-	$random_string = str_shuffle("azertyuiopmlkj%hgfd%sqw01%23456789/=:!?");
+	$random_string = sha1($_SERVER['REMOTE_ADDR']);
 
 	$query = $link->query("SELECT * FROM Inscription WHERE email='$email' || telephone='$telephone'");
 
@@ -66,7 +66,7 @@ elseif (isset($_POST) && isset($_POST['request']) && !empty($_POST['request'])) 
 }
 
 
-$query = $link->query("SELECT * FROM Inscription WHERE id_crypt='$_GET[finalisation_offre]' AND id_crypt_1='$_GET[id]'");
+  $query = $link->query("SELECT * FROM Inscription WHERE id_crypt='$_GET[finalisation_offre]' AND id_crypt_1='$_GET[id]'");
   $row = $query->fetch_object();
 
   if ($row->id_crypt != ($_GET['finalisation_offre']) || $row->id_crypt_1 != ($_GET['id'])) {
@@ -109,7 +109,8 @@ elseif (!isset($_GET['requete']) && isset($_GET['finalisation_offre']) && isset(
     default:
       echo "<script>alert(\"Une erreur à eut lieue\")</script>";
       break;
-    }
+  }
+  
   $charge = \Stripe\Charge::create(array(
       'customer' => $customer->id,
       'amount'   => $somme,
