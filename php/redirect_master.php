@@ -18,7 +18,7 @@ elseif (isset($_GET['inscription'])) {
 elseif (isset($_POST) && isset($nom) && isset($prenom) && isset($email) && isset($telephone) && isset($city) && isset($zip_code) && isset($adresse) && !empty($nom) && !empty($prenom) && !empty($email) && !empty($telephone) && !empty($city) && !empty($zip_code) && !empty($adresse)) {
 
 	$random = str_shuffle("azertyuiop0123456789");
-	$random_string = sha1($_SERVER['REMOTE_ADDR']);
+	$random_string = sha1($_SERVER['REMOTE_ADDR']).sha1($random);
 
 	$query = $link->query("SELECT * FROM Inscription WHERE email='$email' || telephone='$telephone'");
 
