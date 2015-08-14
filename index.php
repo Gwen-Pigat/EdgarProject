@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="fr">
-<?php require "include/connexion.php"; ?>
-<?php if (isset($_GET['inscription'])) {
+<?php require "include/connexion.php";
+
+if (isset($_GET['inscription'])) {
 
  $title = "Inscription à Edgar"; include "include/header.php"; ?>
 
@@ -249,6 +250,7 @@ elseif (isset($_GET['acces_paiement']) && isset($_GET['string']) && !empty($_GET
   $row = $query->fetch_object();
 
   if ($row->id_crypt != ($_GET['acces_paiement']) || $row->id_crypt_1 != ($_GET['string'])) {
+      echo "<script>alert(\"Erreur de procédure\")</script>";
       echo "<META HTTP-EQUIV='Refresh' CONTENT='0; URL=index.php'>";
   }
 
@@ -269,6 +271,12 @@ elseif (isset($_GET['acces_paiement']) && isset($_GET['string']) && !empty($_GET
 
 // Si l'utilisateur quitte au moment de payer, dans ce cas on le supprime de la BDD
 $link->query("DELETE FROM Inscription WHERE paiement='En attente'");
+$query = $link->query("SELECT * FROM Inscription WHERE prenom='$_COOKIE[Prenom]'");
+$row = $query->fetch_object();
+
+if (empty($row)) {
+  setcookie("Prenom","$_COOKIE[Prenom]",time() - 3600);
+}
 
 ?>
 
