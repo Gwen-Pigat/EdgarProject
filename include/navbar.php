@@ -10,7 +10,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="index.php">Edgar<?php if (!empty($_COOKIE["Prenom"])){ echo "<span>, bonjour $_COOKIE[Prenom]</span>"; } ?></a>
+      <a class="navbar-brand" href="index.php">Edgar</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -39,7 +39,7 @@
         <span class="icon-bar"></span>
       </button>
         
-      <a class="navbar-brand" href="index.php">Edgar<?php if (!empty($_COOKIE["Prenom"])){ echo "<span>, bonjour $_COOKIE[Prenom]</span>"; } ?></a>
+      <a class="navbar-brand" href="index.php">Edgar</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
