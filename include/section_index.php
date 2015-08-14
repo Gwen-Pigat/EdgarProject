@@ -1,7 +1,11 @@
             <div class="col-md-12 content_presentation" id="content_presentation">
                 <div class="box">
-                    <h2>Rencontrez Edgar</h2>
+                    <h2><?php if(!empty($_COOKIE['Prenom'])){echo $_COOKIE['Prenom'];} else{ echo "Rencontrez Edgar"; } ?></h2>
+                    <?php if (!empty($_COOKIE['Prenom'])) { ?>
+                        <p>Ravi de vous revoir !</p>
+                    <?php } else{ ?>
                     <p>Ravi de faire votre connaissance !</p>
+                    <?php } ?>
                     <p>Je suis Edgar, votre majordome personnel. Je suis l'outil intelligent qui prend en charge à votre place, vos démarches et corvées du quotidien. Je viens chez vous pour effectuer les tâches ménagères que vous n'avez ni le goût, ni le temps de faire vous-même (rangement, vaisselle, courses, pressing, Poste...).</p>
                     <p>Imaginez déjà tout ce que vous pourrez faire avec le temps que je vais vous faire gagner : quelques instants de plus en amoureux, quelques pages de plus de votre roman préféré, quelques kilomètres de plus pour votre jogging.</p>
                 </div>
@@ -28,7 +32,18 @@
                     <div class="container pricing bottommargin clearfix">
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                             <div class="pricing-box">
-                                <div class="pricing-title">
+                                <?php if ($row_cookie->formule == "home"){
+                                    $light = "light";
+                                } elseif ($row_cookie->formule == "sweet_home"){
+                                    $light_sweet = "light";
+                                } elseif ($row_cookie->formule == "sweet_home_plus"){
+                                    $light_plus = "light";
+                                } else{
+                                    $light = "";
+                                    $light_sweet = "";
+                                    $light_plus = "";
+                                }?>
+                                <div class="pricing-title" id="<?php echo $light ?>" >
                                     <h3>Formule Home</h3>
                                 </div>
                                 <div class="pricing-price">
@@ -57,7 +72,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                              <div class="pricing-box">
-                                <div class="pricing-title">
+                                <div class="pricing-title" id="<?php echo $light_sweet ?>">
                                     <h3>Formule Sweet Home</h3>
                                 </div>
                                 <div class="pricing-price">
@@ -89,7 +104,7 @@
                         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 
                             <div class="pricing-box">
-                                <div class="pricing-title">
+                                <div class="pricing-title" id="<?php echo $light_plus ?>">
                                     <h3>Formule Sweet Home +</h3>
                                 </div>
                                 <div class="pricing-price">
