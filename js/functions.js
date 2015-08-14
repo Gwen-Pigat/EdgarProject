@@ -6,6 +6,8 @@ $(document).ready(function(){
       $(".loading").delay(2000).fadeOut(500);
       $(".box_admin").delay(2500).fadeIn(500);
 
+      $("#section_paiement").fadeIn(1000);
+
       $(".navbar-default .navbar-brand span").delay(1000).fadeIn(500);
 
       var $document = $(document),
