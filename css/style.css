@@ -16,6 +16,30 @@
 	src: url("../fonts/coolvetica rg.ttf");
 }
 
+#visiteur{
+	/*background-color: #fff;
+    padding: 2%;
+    display: none;
+    text-align: center;
+    font-size: 5vw;
+    z-index: 10;
+    margin-top: 15%;
+    font-family: Distant Stroke;
+    border: 23px black solid;
+    position: fixed;*/
+}
+
+#light, #light_sweet, #light_plus{
+	color: #fff;
+	background-color: #d9534f;
+	
+}
+
+#light h3{
+	color: #fff;
+	text-shadow: 0 0 1px #fff;
+}
+
 .bloc_eleven{
 	margin-bottom: 5%;
 }
@@ -1134,6 +1158,10 @@ a .fa-close:hover, a .fa-home:hover{
 
 
 /* Section paiement */
+
+#section_paiement{
+	display: none;
+}
 
 #section_paiement .sign_up{
 	margin-top: 4%;
