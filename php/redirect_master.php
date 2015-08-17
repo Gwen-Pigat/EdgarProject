@@ -84,25 +84,22 @@ elseif (!isset($_GET['requete']) && isset($_GET['finalisation_offre']) && isset(
 	$query = $link->query("SELECT * FROM Inscription WHERE id_crypt='$_GET[finalisation_offre]' AND id_crypt_1='$_GET[id]'")or die("Erreur");
 	$row = $query->fetch_object();
 
-  require_once('stripe/config.php');
-  $token  = $_POST['stripeToken'];
-  $customer = \Stripe\Customer::create(array(
-      'email' => $row->email,
-      'card'  => $token
-  ));
   switch ($_POST['offre']) {
     case 'home':
-      $somme = 1800;
+      // $somme = 1800;
+      $plan = 'home_plan';
       $update = $row->Offre_home + 1;
       $sql_query = "Offre_home";
       break;
     case 'sweet_home':
-      $somme = 2500;
+      // $somme = 2500;
+      $plan = 'sweethome_plan';
       $update = $row->Offre_sweethome + 1;
       $sql_query = "Offre_sweethome";
       break;
     case 'sweet_home_plus':
-      $somme = 4500;
+      // $somme = 4500;
+      $plan = 'sweethomeplus_plan';
       $update = $row->Offre_sweethomeplus + 1;
       $sql_query = "offre_sweethomeplus";
       break;
@@ -110,12 +107,20 @@ elseif (!isset($_GET['requete']) && isset($_GET['finalisation_offre']) && isset(
       echo "<script>alert(\"Une erreur à eut lieue\")</script>";
       break;
   }
-  
-  $charge = \Stripe\Charge::create(array(
-      'customer' => $customer->id,
-      'amount'   => $somme,
-      'currency' => 'eur'
+
+  require_once('stripe/config.php');
+  $token  = $_POST['stripeToken'];
+  $customer = \Stripe\Customer::create(array(
+      'email' => $row->email,
+      'card'  => $token,
+      'plan'  => $plan
   ));
+  
+  // $charge = \Stripe\Charge::create(array(
+  //     'customer' => $customer->id,
+  //     // 'amount'   => $somme,
+  //     'currency' => 'eur'
+  // ));
 
   $jour = date("m/d/Y"); $time = date("H:i:s");
   $inscrit = "$jour à $time";
