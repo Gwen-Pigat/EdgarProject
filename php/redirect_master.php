@@ -117,7 +117,10 @@ elseif (!isset($_GET['requete']) && isset($_GET['finalisation_offre']) && isset(
       'currency' => 'eur'
   ));
 
-	$link->query("UPDATE Inscription SET paiement='Oui',formule='$_POST[offre]' WHERE id_crypt='$_GET[finalisation_offre]'")or die("Erreur SQL");
+  $jour = date("m/d/Y"); $time = date("H:i:s");
+  $inscrit = "$jour à $time";
+
+	$link->query("UPDATE Inscription SET paiement='Oui',formule='$_POST[offre]',date='$inscrit' WHERE id_crypt='$_GET[finalisation_offre]'")or die("Erreur SQL");
 
   $query = $link->query("SELECT * FROM Compte_rendu");
   $row = $query->fetch_object();
@@ -135,11 +138,14 @@ elseif (!isset($_GET['requete']) && isset($_GET['finalisation_offre']) && isset(
 elseif (isset($_GET['finalisation_offre']) && isset($_GET['id']) && isset($_GET['requete']) && !empty($_GET['finalisation_offre']) && !empty($_GET['id']) && isset($_POST) && isset($_POST['card_number']) && isset($_POST['expiration']) && isset($_POST['cryptogramme']) && !empty($_POST['card_number']) && !empty($_POST['expiration']) && !empty($_POST['cryptogramme'])) {
 
   // Test
-  $coding_id = sha1($_SERVER['HTTP_ACCEPT_LANGUAGE']).'-//-'.sha1($_SERVER['HTTP_USER_AGENT']).'-//-'.sha1($_SERVER['HTTP_ACCEPT_ENCODING']);
-  $link->query("INSERT INTO Session(identifiant,visites) VALUES('$coding_id','Oui')");
+  // $coding_id = sha1($_SERVER['HTTP_ACCEPT_LANGUAGE']).'-//-'.sha1($_SERVER['HTTP_USER_AGENT']).'-//-'.sha1($_SERVER['HTTP_ACCEPT_ENCODING']);
+  // $link->query("INSERT INTO Session(identifiant,visites) VALUES('$coding_id','Oui')");
   // 
 
-  $link->query("UPDATE Inscription SET paiement='Requête carte' ,formule='$_POST[offre]' WHERE id_crypt='$_GET[finalisation_offre]'")or die("Erreur SQL");
+  $jour = date("m/d/Y"); $time = date("H:i:s");
+  $inscrit = "$jour à $time";
+
+  $link->query("UPDATE Inscription SET paiement='Requête carte' ,formule='$_POST[offre]', date='$inscrit' WHERE id_crypt='$_GET[finalisation_offre]'")or die("Erreur SQL");
 
 
   $query = $link->query("SELECT * FROM Compte_rendu");
