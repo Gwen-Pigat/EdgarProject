@@ -21,7 +21,7 @@
                         <p class="lead">Envoyez-moi un mail ou un texto avec ce que vous souhaitez que je fasse et retrouvez votre sweet home avec bonheur.</p>
                     </div>
 
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 col-xs-12">
                             <img class="fade_in_homepage" src="images/Testrendu.png" alt="Carte de visite">
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img src="images/icons/special_request.png">
                         <h5>Requêtes spéciales</h5>
                     </div>
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <p>Plus vous utilisez Edgar, plus il vous connaît. Edgar va anticiper vos besoins, apprendre vos habitudes pour être le majordome que vous aviez toujours rêvé d'avoir.</p>
                         <a href="index.php?inscription">
                         <button class="btn btn-danger btn-lg">Commencer</button></a>
