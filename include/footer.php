@@ -14,7 +14,11 @@
         </ul>
       </div>
       <div class="socials">
-            <h3><strong>Nous suivre</strong></h5>
+            <?php if (!empty($_COOKIE['Prenom'])) { ?>
+            <h3><strong>Suivez-nous, <?php echo $_COOKIE['Prenom']; ?></strong></h3>
+            <?php } else{ ?>
+            <h3><strong>Nous suivre</strong></h3>
+            <?php } ?>
             <a target="_blank" href="https://www.facebook.com/edgarclub"><i class="fa fa-facebook-square fa-3x"></i></a>
             <a target="_blank" href="https://twitter.com/edgar_club"><i class="fa fa-twitter-square fa-3x"></i></a>
       </div>
