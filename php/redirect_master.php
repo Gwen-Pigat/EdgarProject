@@ -112,9 +112,14 @@ elseif (!isset($_GET['requete']) && isset($_GET['finalisation_offre']) && isset(
   $token  = $_POST['stripeToken'];
   $customer = \Stripe\Customer::create(array(
       'email' => $row->email,
+      'customer' => $customer->id,
       'card'  => $token,
       'plan'  => $plan
   ));
+
+  echo $plan.'<br>';
+  echo $token.'<br>';
+  echo strlen($token);
   
   // $charge = \Stripe\Charge::create(array(
   //     'customer' => $customer->id,
@@ -125,7 +130,7 @@ elseif (!isset($_GET['requete']) && isset($_GET['finalisation_offre']) && isset(
   $jour = date("m/d/Y"); $time = date("H:i:s");
   $inscrit = "$jour à $time";
 
-	$link->query("UPDATE Inscription SET paiement='Oui',formule='$_POST[offre]',date='$inscrit' WHERE id_crypt='$_GET[finalisation_offre]'")or die("Erreur SQL");
+	$link->query("UPDATE Inscription SET paiement='Oui',formule='$_POST[offre]',date='$inscrit',token='$token' WHERE id_crypt='$_GET[finalisation_offre]'")or die("Erreur SQL");
 
   $query = $link->query("SELECT * FROM Compte_rendu");
   $row = $query->fetch_object();
