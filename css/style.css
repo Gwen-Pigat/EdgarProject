@@ -316,7 +316,7 @@ a:hover{
 
 body{
 	font-family: "Caviar";
-	transition: 0.4s;
+	transition: 0s;
 }
 
 .fade_in_homepage{
@@ -432,7 +432,6 @@ transition: height .4s ease,opacity .3s ease;
 
 .section_edgar_carte{
 	padding: 2%;
-
 }
 
 .section_edgar_carte p{
@@ -1466,9 +1465,43 @@ a .fa-close:hover, a .fa-home:hover{
 }
 
 
-/* Format tablette */
+/* Format tablette  portrait */
 
-@media screen and (min-width: 768px) and (max-width: 1280px){
+@media screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait){
+	#devenir_edgar h1, #conditions_generales h1, #faq h1, #mentions_legales h1{
+		margin-top: 14%;
+		font-size: 6vw;
+	}
+	.card_description{
+		font-size: 2vw;
+	}
+	#validation_inscription p{
+		font-size: 1.5vw;
+	}
+	#devenir_edgar div p, #conditions_generales div p, #faq div p, #mentions_legales div p{
+		margin: 2%;
+	}
+	#devenir_edgar h2, #conditions_generales h2, #faq h2, #mentions_legales h2{
+		font-size: 3vw;
+	}
+	#conditions_generales h3, #faq h3, #mentions_legales h3{
+    margin: 2%;
+    padding: 2%;
+    font-size: 2vw;
+	}
+	.btn-lg{
+		font-size: 2vw;
+	}
+	.home{
+		margin-top: 25%;
+	}
+	.home h4{
+		font-size: 8vw;
+	}
+	.home button {
+    font-size: 3vw;
+    width: 20vw;
+	}
 	#content_heading h1{
 	font-size: 4vw;
 	padding-bottom: 10%;
@@ -1504,11 +1537,16 @@ a .fa-close:hover, a .fa-home:hover{
     margin: 0%;
 	}
 	#pricing .questions{
-		font-isze: 1.5vw;
+		font-size: 1.5vw;
 	}
 	#content_heading .lead{
-		margin-bottom: 10%;
-		margin-top: 10%;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	#content_heading h1 {
+    font-size: 3vw;
+    padding-bottom: 5%;
+    margin-top: 5%;
 	}
 	.fade_in_homepage{
 		margin-top: 0%;
@@ -1519,6 +1557,15 @@ a .fa-close:hover, a .fa-home:hover{
 	.pricing h5{
 		font-size: 1.3vw;
 	}
+	.section_edgar_carte h3, .section_edgar_services h3{
+		font-size: 4vw;
+	}
+	.section_edgar_services h4{
+		font-size: 2vw;
+	}
+	.pricing-features li{
+		font-size: 1vw;
+	}
 	.content_presentation .box p{
 		font-size: 1.5vw;
 	}
@@ -1526,7 +1573,7 @@ a .fa-close:hover, a .fa-home:hover{
 		font-size: 7vw;
 	}
 	.main{
-		padding: 22%;
+		padding: 25% 0% 5% 0%;
 	}
 	.main h1{
 		font-size: 4.3vw;
@@ -1535,8 +1582,11 @@ a .fa-close:hover, a .fa-home:hover{
 		font-size: 2.5vw;
 		margin: 1%;
 	}
+	.content_presentation{
+		padding: 6% 15% 6% 15%;
+	}
 	.switcher_header{
-		margin-top: 23%;
+		margin-top: 16%;
 	}
 	.navbar-default .navbar-nav>li>a{
 		font-size: 1.5vw;
@@ -1554,6 +1604,206 @@ a .fa-close:hover, a .fa-home:hover{
 	font-size: 4vw;
 	}
 	.section_edgar_carte p {
+    font-size: 1.5vw;
+	}
+	.section_edgar_services p{
+		font-size: 2vw;
+	}
+	.section_edgar_services h5 {
+    font-size: 2vw;
+	}
+	#footer{
+		/*display: none*/
+	}
+	#footer .socials{
+		float: left;
+	}
+	#footer .list_first{
+	    margin-left: 5vw;
+	}
+	#footer .list_footer{
+    	font-size: 4vw;
+    	margin-left: 6%;
+	}
+	#footer .list_footer ul, #footer .list_first ul{
+		padding: 0%;
+	}
+	#footer .list_footer ul a li, #footer .list_first ul a li{
+		font-size: 2vw;
+	}
+	#footer .socials h3{
+		font-size: 3vw;
+		margin-top: 0%;
+	}#footer .fa-3x{
+		font-size: 4vw;
+	}
+	#home_switch img{
+		width: 6vw;
+	}
+	#inscription h1{
+		font-size: 5vw;
+	}
+	#inscription_form p{
+		font-size: 2vw;
+	}
+	#inscription .sign_up .input{
+		margin-top: 10%;
+		font-size: 3vw;	
+	}
+	#inscription .btn-submit{
+		font-size: 3vw;
+	}
+}
+
+
+/* Format tablette  portrait */
+
+@media screen and (min-width: 768px) and (max-width: 1280px) and (orientation: landscape){
+	#devenir_edgar h1, #conditions_generales h1, #faq h1, #mentions_legales h1{
+		margin-top: 14%;
+		font-size: 6vw;
+	}
+	#section_paiement h1{
+		font-size: 5vw;
+	}
+	#section_paiement h2{
+		font-size: 2.5vw;
+	}
+	#content_heading img{
+		margin-top: 4%;
+	}
+	.section_edgar_services img{
+		width: 6vw;
+	}
+	#devenir_edgar div p, #conditions_generales div p, #faq div p, #mentions_legales div p{
+		margin: 2%;
+	}
+	#devenir_edgar h2, #conditions_generales h2, #faq h2, #mentions_legales h2{
+		font-size: 3vw;
+	}
+	#conditions_generales h3, #faq h3, #mentions_legales h3{
+    margin: 2%;
+    padding: 2%;
+    font-size: 2vw;
+	}
+	.btn-lg{
+		font-size: 2vw;
+	}
+	.home h4{
+		font-size: 6vw;
+	}
+	.home button {
+    font-size: 2vw;
+    width: 15vw;
+	}
+	#content_heading h1{
+	font-size: 4vw;
+	padding-bottom: 10%;
+	margin-top: 10%;
+	}
+	#content_heading .lead {
+    margin-bottom: 4%;
+	}
+	.section_edgar_carte p{
+		font-size: 1.3vw;
+	}
+	.badge_reduction{
+    width: 7vw;
+    position: absolute;
+    z-index: 1;
+    margin-left: 3vw;
+	}
+	.pricing-action-default a{
+		font-size: 2vw;
+	}
+	.pricing-price p{
+	font-size: 0.9vw;
+	margin-top: 5%;
+	}
+	.pricing-price {
+    font-size: 5vw;
+	}
+	.pricing-title h3{
+	font-size: 2vw;
+	}
+	.pricing-price span {
+    font-size: 3vw;
+    margin: 0%;
+	}
+	#pricing .questions{
+		font-size: 1.5vw;
+	}
+	#content_heading .lead{
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+	#content_heading h1 {
+    font-size: 3vw;
+    padding-bottom: 5%;
+    margin-top: 5%;
+	}
+	.fade_in_homepage{
+		margin-top: 0%;
+	}
+	.pricing-features li{
+		font-size: 1.3vw;
+	}
+	.pricing h5{
+		font-size: 1.3vw;
+	}
+	.section_edgar_carte h3, .section_edgar_services h3{
+		font-size: 4vw;
+	}
+	.section_edgar_services h4{
+		font-size: 2vw;
+	}
+	.pricing-features li{
+		font-size: 1vw;
+	}
+	.content_presentation .box p{
+		font-size: 1.5vw;
+	}
+	.content_presentation h2{
+		font-size: 7vw;
+	}
+	.main{
+		padding: 25% 0% 25% 0%;
+	}
+	.main h1{
+		font-size: 4.3vw;
+	}
+	.main h2{
+		font-size: 2.5vw;
+		margin: 1%;
+	}
+	.content_presentation{
+		padding: 6% 15% 6% 15%;
+	}
+	.switcher_header{
+		margin-top: 16%;
+	}
+	.navbar-default .navbar-nav>li>a{
+		font-size: 1.6vw;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.navbar-default .navbar-brand{
+		font-size: 4vw;
+	}
+	.switcher_header .fa.fa-angle-down {
+    width: 6vw;
+    font-size: 6vw;
+	}
+	.section_edgar_carte h3{
+	font-size: 4vw;
+	}
+	.section_edgar_carte p {
+    font-size: 1.5vw;
+	}
+	.section_edgar_services p{
+		font-size: 2vw;
+	}
+	.section_edgar_services h5 {
     font-size: 1.5vw;
 	}
 	#footer{
@@ -1580,5 +1830,21 @@ a .fa-close:hover, a .fa-home:hover{
 		margin-top: 0%;
 	}#footer .fa-3x{
 		font-size: 4vw;
+	}
+	#home_switch img{
+		width: 4vw;
+	}
+	#inscription h1{
+		font-size: 5vw;
+	}
+	#inscription_form p{
+		font-size: 2vw;
+	}
+	#inscription .sign_up .input{
+		margin-top: 10%;
+		font-size: 2vw;	
+	}
+	#inscription .btn-submit{
+		font-size: 2vw;
 	}
 }
