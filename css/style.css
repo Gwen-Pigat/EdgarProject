@@ -563,6 +563,7 @@ h1, h2, h3, h4, h5, h6{
 #footer a{
 	color: #858583;
 	font-weight: 700;
+	transition: 0.2s;
 }
 
 #footer a:hover{
@@ -614,7 +615,7 @@ nav .menu-navbar-div:hover{
     width: 7vw;
     position: absolute;
     z-index: 1;
-    margin-left: 15vw;
+    margin-left: 2vw;
 }
 
 .pricing-title {
@@ -850,24 +851,28 @@ nav .menu-navbar-div:hover{
 	border: 2px #28c223 solid;
 	background-color: rgba(0,0,0,0);
 	color: #28c223;
+	transition: 0.2s;
 }
 
 .btn-accept:hover{
 	border: 2px #28c223 solid;
 	background-color: #28cc23;
 	color: #fff;
+	transition: 0.2s;
 }
 
 .btn-refuse{
 	border: 2px #ff0000 solid;
 	background-color: rgba(0,0,0,0);
 	color: #ff0000;
+	transition: 0.2s;
 }
 
 .btn-refuse:hover{
 	border: 2px #ff0000 solid;
 	background-color: #ff0000;
 	color: #fff;
+	transition: 0.2s;
 }
 
 .btn-refuse-select{
@@ -966,6 +971,7 @@ a .fa-close:hover, a .fa-home:hover{
 	background-color: #fff;
 	font-weight: 700;
 	font-family: "Caviar";
+	transition: 0.4s;
 }
 
 .btn-submit:hover{
@@ -1116,6 +1122,7 @@ a .fa-close:hover, a .fa-home:hover{
 
 #section_admin h1 span{
 	color: #000;
+	display: none;
 	margin: 0%;
 	text-align: center;
 	font-size:3vw;
